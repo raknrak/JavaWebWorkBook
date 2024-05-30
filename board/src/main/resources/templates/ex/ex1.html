@@ -63,6 +63,18 @@
         </li>
     </ul>
 
+<!-- 링크 처리 -->
+    <a th:href="@{/hello}">Go to /hello</a>
+
+    <br/><br/><br/>
+
+<!-- 쿼리 스트링 처리-->
+    <a th:href="@{/hello(name='AAA', age=16)}">Go to /hello</a>
+
+    <br/><br/><br/>
+
+<!-- 링크를 만드는 값이 여러개 -->
+    <a th:href="@{/hello(types=${ {'AA', 'BB', 'CC'} }, age=16)}"> Go to /hello </a>
 
 </body>
 </html>
