@@ -20,8 +20,8 @@ public class BaseEntity { // 공통 사용 컬럼
     private LocalDateTime regDate;
 
     @LastModifiedDate
-    @Column(name= "modedate")
-    private LocalDateTime modeDate;
+    @Column(name= "moddate")
+    private LocalDateTime modDate;
 
 
 }
