@@ -19,9 +19,9 @@ public class BoardRepositoryTests {
     public void InsertTest(){
         IntStream.rangeClosed(1, 100).forEach(i -> {
             Board board = Board.builder()
-                    .title("title...." + 1)
-                    .content("content...." + 1)
-                    .writer("user..." + 1)
+                    .title("title...." + i)
+                    .content("content...." + i)
+                    .writer("user..." + i)
                     .build();
 
             Board result = boardRepository.save(board);
